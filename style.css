@@ -102,9 +102,6 @@ input:focus {
     .navbar-links {
         display: none;
     }
-
-    
-
 }
 
 /* Side Navbar */
@@ -181,14 +178,22 @@ input:focus {
     font-size: 10vw;
     
 }
+
 .slider-right-button{
     position: absolute;
     top: 35%;
     right: 5%;
 }
+
 .slider-right-button i{
     font-size: 10vw;
 }
+
+.slider-content button:hover{
+    background-color: #dacbcb;
+    color: red;
+}
+
 .slider-content{
     position: absolute;
     color: white;
@@ -196,9 +201,11 @@ input:focus {
      width: 100%;
      top: 20%;
 }
+
 .slider-content h1{
     font-size: 5vw;
 }
+
 .slider-content button{
    padding-left: 20px;
    padding-right: 20px;
@@ -212,16 +219,13 @@ input:focus {
 .brands{
     display: flex;
     margin-top: 2vw;
-    
     justify-content: space-between;
-    
     
 }
 
 .brands-icon{
     width: 4vw;
     align-items: center;
-
 }
 
 .brands-item{
@@ -230,6 +234,11 @@ input:focus {
     flex-direction: column;
     text-align: center;
     font-size: 2vw;
+}
+
+.brands-item:hover{
+    background-color: #999894;
+    width: 100px;
 }
 
 .servives-container-1
@@ -242,49 +251,35 @@ input:focus {
     font-size: 1.5vw;
 }
 
-.servives-container-2
-{
-    
+.servives-container-2{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     gap: 10px;
     font-size: 1vw;
-    
 }
-
 
 .servives-container-2 div{
     border-radius: 5px;
     background-color: #F2F4F7;
     padding: 10px;
-    
-    
-
 }
 
+/*new arrival*/
 .new-arrival{
     display: flex;
     justify-content: space-between;
     margin-top: 2vw;
-   
-    
 }
 
 .new-arrival-container{
    position: relative;
-   
-    
 }
 
 .new-arrival-container img{
     border-radius: 2%;
-    
-     
  }
  
-
 .overlay{
     border-radius: 2%;
     position: absolute;
@@ -295,8 +290,6 @@ input:focus {
     top: 0;
     opacity: 0.6;
  }
- 
-
 
 .new-arrival button{
     padding-left: 10%;
@@ -312,17 +305,20 @@ input:focus {
     top: 50%;
     left: 18%;
     z-index: 2;
-    
+}
 
- }
+.new-arrival button:hover{
+    background-color: #dacbcb;
+    color: red;
+}
+
+/*most wanted*/
 .most-wanted{
     display: flex;
     justify-content: space-between;
     margin-top: 2vw;
     overflow-x: scroll;
     gap: 20px;
-   
-    
 }
 
 .most-wanted-container{
@@ -331,8 +327,6 @@ input:focus {
 
 .most-wanted img{
     border-radius: 2%;
-    
-     
  }
 
  .sale-overlay{
@@ -349,7 +343,6 @@ input:focus {
 
  .most-wanted::-webkit-scrollbar {
     appearance: none;
-    
   }
    
 .like-button{
@@ -359,10 +352,10 @@ input:focus {
     right: 5%;
 }
 
+/*limited offer*/
 .limited-offer{
     display: flex;
     justify-content: center;
-    
     align-items: center;
     background-color: #1D232C;
     color: #E2E1E1;
@@ -371,8 +364,8 @@ input:focus {
 }
 
 .limited-offer img{
-    width: 300px;
-    height: 100%;
+    width: 100%;
+    height: 100%100%;
 }
 
 .limited-offer-text{
@@ -388,15 +381,16 @@ input:focus {
     font-size: 1.2vw;
     color: #1D232C;
     border-radius: 10px;
- 
     border: none;
-    
-    
-
  }
 
- 
- .initial-scroll-animate{
+.limited-offer button:hover{
+ background-color: #dacbcb;
+    color: red;
+}
+
+/*Scroll Animate*/
+.initial-scroll-animate{
    
     transition: 3s;
  }
@@ -405,6 +399,7 @@ input:focus {
     opacity: 0;
  }
 
+ /*news folder*/
  .news{
     font-size: 2vw;
     margin-top: 5vw;
@@ -418,16 +413,13 @@ input:focus {
     width: 80vw;
     margin-bottom: 10px;
     border: solid #1D232C 3px;
-
 }
 
 .news input:focus{
    outline: none;
-
 }
 
 .news button{
-    
     margin-top: 10px;
     font-size: 1.8vw;
     color: #E2E1E1;
@@ -435,17 +427,18 @@ input:focus {
     border-radius: 10px;
     border: none;
     padding:10px
-    
-    
-
  }
 
+ .news button:hover{
+    background-color: #424b58;
+ }
 
  .icon{
     width: 40px;
     margin: 2vw;
-
 }
+
+/*footer*/
 .footer{
     font-size: 2vw;
     margin-top: 5vw;
@@ -455,7 +448,7 @@ input:focus {
     box-sizing: border-box;
 }
 
-.footer-container{ 
+.footer-container{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -489,26 +482,24 @@ input:focus {
 
 .vertical-line {
     border: none;
-    border-left: 5px solid #1D232C; /* Adjust color and width as needed */
-    height: 2200px; /* Adjust height as needed */
-    margin:  5px; /* Adjust margin as needed */
+    border-left: 3px solid #1D232C; 
+    height: 100%; 
+    margin: 0 20px; 
     position: absolute;
     top: 0px;
     right: 0px
-    
   }
 
 .filter-section-price,.filter-section-arrivals,.filter-section-occasion,.filter-section-colors{
     margin-top: 3vw;
     margin-bottom: 10px;
-    
 }
 
 .product-section{
     padding: 10px;
 }
 
-.product{
+.products{
     margin-top: 2vw;
     display: flex;
     flex-wrap: wrap;
@@ -516,50 +507,34 @@ input:focus {
     font-size:1vw;
 }
 
-
-.product-card {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  text-align: center;
-  padding: 15px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-}
-
-.product-card:hover {
-  transform: scale(1.03);
-}
-
-
-  .contact-form {
+/*contact*/
+.contact-form{
     background-color: #1D232C;
-    color: #dddddd;
+    color: white;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0.2px 4px rgba(0, 0, 0, 0.1);
     width: 60vw;
     margin: auto;
     padding: 5vw;
     padding-right: 10vw;
     margin-top: 10px;
-  }
+}
 
-  .contact-form h2 {
+.contact-form h2 {
     margin-bottom: 1vw;
-   
+
   }
 
   .contact-form label {
     display: block;
     margin-bottom: 1vw;
- 
+
   }
 
-  .contact-form input[type="text"],
-  .contact-form textarea {
+  .contact-form input[type="text"],.contact-form textarea {
     width: 100%;
     padding: 2vw;
-    border: 1px solid #dddddd;
+    border: 1px solid white;
     border-radius: 4px;
     margin-bottom: 1vw;
     font-size: 1vw;
@@ -572,19 +547,15 @@ input:focus {
   }
 
   .contact-form input[type="submit"] {
-    
-    color: #ffffff;
+    color: white;
     border: none;
     border-radius: 4px;
     padding: 10px 20px;
     cursor: pointer;
     font-size: 16px;
-    background-color: #0056b3;
+    background-color: blue;
   }
 
   .contact-form input[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #327cca;
   }
-
-
- 

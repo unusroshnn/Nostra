@@ -1,4 +1,4 @@
-import {products} from "./product.js";
+import {products} from "./products.js";
 
 
 var offerBar = document.querySelector(".offer-bar")
@@ -64,6 +64,11 @@ tags.forEach((tag)=>{
     })
 })
 
+// var searchInput = document.getElementById("searchInput")
+// searchInput.addEventListener("keyup",function(){
+//     update()
+// })
+
 function update()
 {
 
@@ -107,5 +112,6 @@ function update()
 
         
     };
+
 
 }

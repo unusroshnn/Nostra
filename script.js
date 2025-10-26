@@ -1,11 +1,8 @@
 var offerBar = document.querySelector(".offer-bar")
 
-document.getElementById("offer-close").addEventListener("click",
-
-function(){
+document.getElementById("offer-close").addEventListener("click",function(){
     offerBar.style.display="none"
-}
-)
+})
 
 var sideNavMenu=document.getElementById("side-navbar-activate")
 var sidenavbar = document.querySelector(".side-navbar")
@@ -16,8 +13,6 @@ sideNavMenu.addEventListener("click",function(){
 document.getElementById("side-navbar-close").addEventListener("click",()=>{
     document.querySelector(".side-navbar").style.marginLeft = "-60%"
 })
-
-
 
 var sliderleftbutton = document.getElementById("slider-left-activate")
 var sliderrightbutton =document.getElementById("slider-right-activate")
@@ -39,11 +34,7 @@ function(){
     else{
         sliderimage.style.marginLeft="-"+slidermargin+"vw";
     }
-    
-   
-
-}
-)
+})
 
 sliderleftbutton.addEventListener("click",
 
@@ -59,15 +50,8 @@ function(){
 
         slidermargin=slidermargin-100
     sliderimage.style.marginLeft="-"+slidermargin+"vw";
-    }
-    
-    
-}
-)
-
-
-
-
+    } 
+})
 
 var likebuttons=document.querySelectorAll(".like-button")
 
@@ -78,10 +62,10 @@ likebuttons.forEach((btn)=>{
         if(e.target.src.indexOf("blackheart")>0)
         {
             console.log("jkjk");
-            e.target.src="img/icons/redheart.png"
+            e.target.src="img/redheart.png"
         }
         else{
-            e.target.src="img/icons/blackheart.png"
+            e.target.src="img/blackheart.png"
         }
     })
 })
@@ -92,7 +76,6 @@ window.addEventListener("scroll",function(){
         windowHeight = window.innerHeight
      var elbound = el.getBoundingClientRect()
    
-
      console.log(windowHeight)
      console.log(elbound.top)
      if(windowHeight>elbound.top-100){
@@ -100,13 +83,5 @@ window.addEventListener("scroll",function(){
     el.classList.remove("reveal-scroll-animate")
 
     }
-    
+}) 
 })
-    
-})
-
-
-//Collections
-
-
-
